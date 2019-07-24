@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{218C73E1-05CF-49B2-83E7-0783602D0CA9}</ProjectGuid>
+    <RootNamespace>Test</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.28803.298</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="File\Equip.cpp" />
+    <ClCompile Include="File\Hero.cpp" />
+    <ClCompile Include="File\MapData.cpp" />
+    <ClCompile Include="File\Mission.cpp" />
+    <ClCompile Include="File\TalkData.cpp" />
+    <ClCompile Include="Frame\CBmpButton.cpp" />
+    <ClCompile Include="Frame\CDBmpButton.cpp" />
+    <ClCompile Include="Frame\ColorButton.cpp" />
+    <ClCompile Include="Frame\CPGameInput.cpp" />
+    <ClCompile Include="Frame\GameFrame.cpp" />
+    <ClCompile Include="Frame\GameInput.cpp" />
+    <ClCompile Include="Frame\GameOutput.cpp" />
+    <ClCompile Include="Frame\Scene.cpp" />
+    <ClCompile Include="Frame\UI.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Scene_Attack.cpp" />
+    <ClCompile Include="Scene_Data.cpp" />
+    <ClCompile Include="Scene_End.cpp" />
+    <ClCompile Include="Scene_Game.cpp" />
+    <ClCompile Include="Scene_Game_Menu.cpp" />
+    <ClCompile Include="Scene_Help.cpp" />
+    <ClCompile Include="Scene_HY.cpp" />
+    <ClCompile Include="Scene_Load.cpp" />
+    <ClCompile Include="Scene_Loading.cpp" />
+    <ClCompile Include="Scene_Menu.cpp" />
+    <ClCompile Include="sound\SoundManage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="File\Enemy.h" />
+    <ClInclude Include="File\Equip.h" />
+    <ClInclude Include="File\Hero.h" />
+    <ClInclude Include="File\LoadItemINI.h" />
+    <ClInclude Include="File\LoadMapINI.h" />
+    <ClInclude Include="File\LoadMissionINI.h" />
+    <ClInclude Include="File\LoadTalkINI.h" />
+    <ClInclude Include="File\MapCrash.h" />
+    <ClInclude Include="File\MapCrashId.h" />
+    <ClInclude Include="File\MapData.h" />
+    <ClInclude Include="File\Mission.h" />
+    <ClInclude Include="File\NpcData.h" />
+    <ClInclude Include="File\Rpg.h" />
+    <ClInclude Include="File\TalkData.h" />
+    <ClInclude Include="Frame\CBmpButton.h" />
+    <ClInclude Include="Frame\CDBmpButton.h" />
+    <ClInclude Include="Frame\ColorButton.h" />
+    <ClInclude Include="Frame\CPGameInput.h" />
+    <ClInclude Include="Frame\GameFrame.h" />
+    <ClInclude Include="Frame\GameInput.h" />
+    <ClInclude Include="Frame\GameOutput.h" />
+    <ClInclude Include="Frame\Scene.h" />
+    <ClInclude Include="Frame\UI.h" />
+    <ClInclude Include="Frame\Vector2D.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Scene_Attack.h" />
+    <ClInclude Include="Scene_Data.h" />
+    <ClInclude Include="Scene_End.h" />
+    <ClInclude Include="Scene_Game.h" />
+    <ClInclude Include="Scene_Game_Menu.h" />
+    <ClInclude Include="Scene_Help.h" />
+    <ClInclude Include="Scene_HY.h" />
+    <ClInclude Include="Scene_Load.h" />
+    <ClInclude Include="Scene_Loading.h" />
+    <ClInclude Include="Scene_Menu.h" />
+    <ClInclude Include="sound\soundmanage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cur.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Test.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

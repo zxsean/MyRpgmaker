@@ -1,0 +1,276 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 229, 217
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "地形"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 229, 217
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "景物"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 229, 217
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NPC"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 229, 217
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "障碍"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG5 DIALOGEX 0, 0, 229, 217
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "建筑"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG6 DIALOGEX 0, 0, 120, 60
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置地图ID"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,4,39,50,14
+    PUSHBUTTON      "取消",IDCANCEL,65,39,50,14
+    EDITTEXT        IDC_EDIT1,4,8,78,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_DIALOG7 DIALOGEX 0, 0, 572, 298
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "地图数据"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,512,7,53,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    RTEXT           "当前地图ID:",IDC_STATIC,465,7,46,11,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT2,512,23,53,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    RTEXT           "当前地图表大小:",IDC_STATIC,441,23,69,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT3,512,40,53,43,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "地图序号:",IDC_STATIC,440,40,69,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT4,511,89,54,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5,511,105,54,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT6,511,121,54,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT7,511,137,54,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "地图数据:",IDC_STATIC,464,89,46,11,SS_CENTERIMAGE
+END
+
+IDD_DIALOG8 DIALOGEX 0, 0, 246, 126
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "地图类型设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,189,7,50,14
+    EDITTEXT        IDC_EDIT1,67,27,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,67,65,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,67,46,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,67,84,47,12,ES_AUTOHSCROLL
+    CTEXT           "地图类型",IDC_STATIC,7,26,55,11,SS_CENTERIMAGE
+    CTEXT           "事件/地图ID",IDC_STATIC,7,46,55,11,SS_CENTERIMAGE
+    CTEXT           "目标地图x坐标",IDC_STATIC,7,66,55,11,SS_CENTERIMAGE
+    CTEXT           "目标地图y坐标",IDC_STATIC,7,86,55,11,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_DIALOG7, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 565
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_DIALOG8, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "新建",                          ID_40001
+        MENUITEM "打开",                          ID_40002
+        MENUITEM "保存",                          ID_40003
+        MENUITEM "删除",                          ID_40018
+        MENUITEM SEPARATOR
+        MENUITEM "退出",                          ID_40019
+    END
+    POPUP "地图"
+    BEGIN
+        MENUITEM "障碍",                          ID_40006
+        MENUITEM "地形",                          ID_40007
+        MENUITEM "景物",                          ID_40008
+        MENUITEM "NPC",                         ID_40009
+        MENUITEM "建筑",                          ID_40010
+        MENUITEM SEPARATOR
+        MENUITEM "填充地形",                        ID_40021
+    END
+    POPUP "设置"
+    BEGIN
+        MENUITEM "设置地图ID",                      ID_40011
+    END
+    POPUP "显示"
+    BEGIN
+        MENUITEM "显示地图数据",                      ID_40012
+    END
+    POPUP "切换"
+    BEGIN
+        MENUITEM "切换地图",                        ID_40013
+    END
+    POPUP "生成地图"
+    BEGIN
+        MENUITEM "生成地图文件",                      ID_40020
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR                  "1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "1.ico"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
